@@ -1,0 +1,29 @@
+@mixin heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin icon($padding: 10px 15px) {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #f89899;
+  padding: $padding;
+  font-size: 1.3rem;
+}
+
+@mixin heading-title {
+  font-size: 1.8rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.8rem;
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+@mixin dot($color: #383838) {
+  height: 1rem;
+  width: 1rem;
+  margin: auto 10px;
+  background-color: $color;
+  border-radius: 50%;
+  display: inline-block;
+}

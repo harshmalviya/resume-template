@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(gray));
+  background: linear-gradient(to bottom, white, gray);
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+  background-color: white;
+  margin: 3rem;
+  padding: 5rem;
+  padding-left: 3rem;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.8rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.content p {
+  margin: 2rem 0;
+  margin-bottom: 5rem;
+}
+
+.content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .title-image {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #f89899;
+  padding: 10px 15px;
+  font-size: 1.3rem;
+}
+
+.content ul {
+  margin: 3rem 0;
+  list-style: none;
+}
+
+.content li .list-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content li .list-content .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content li .list-content .top p {
+  margin: 0;
+}
+
+.content li .list-content .bottom {
+  margin: 1rem 0;
+}
+
+.skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+}
+
+.skills .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0;
+}
+
+.skills .col .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.8rem 0;
+}
+
+.skills .col .skill p {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.skills .col .skill .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills .col .skill .dots .dot {
+  height: 1rem;
+  width: 1rem;
+  margin: auto 10px;
+  background-color: #383838;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.skills .col .skill .dots .dot_u {
+  height: 1rem;
+  width: 1rem;
+  margin: auto 10px;
+  background-color: #aaaaaa;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.intro-photo {
+  margin: 0 auto;
+}
+
+.intro-photo img {
+  display: block;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+}
+
+.intro-name {
+  font-size: 2.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-name h1 {
+  font-weight: 10;
+  letter-spacing: 10px;
+}
+
+.intro-name strong {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.intro-designation {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.more-info {
+  background-color: #ffb0b2;
+  margin-left: -3rem;
+  position: relative;
+}
+
+.more-info .more-info__content {
+  margin: 0 3rem;
+}
+
+.more-info .more-info__content .heading {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #383838;
+  color: white;
+  padding: 0.3rem 4rem;
+}
+
+.more-info .more-info__content .heading .heading-large {
+  font-size: 1.3rem;
+}
+
+.more-info .more-info__content .heading-top {
+  position: absolute;
+  top: -1rem;
+}
+
+.more-info .more-info__content .contact {
+  padding: 1rem 0;
+}
+
+.more-info .more-info__content .contact .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.more-info .more-info__content .contact .contact-content i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.more-info .more-info__content .contact .contact-content__lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem auto;
+}
+
+.more-info .more-info__content .contact .contact-content__lang .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+}
+
+.more-info .more-info__content .contact .contact-content__lang .dots .dot {
+  height: 1rem;
+  width: 1rem;
+  margin: auto 10px;
+  background-color: #383838;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.more-info .more-info__content .contact .contact-content__lang .dots .dot_u {
+  height: 1rem;
+  width: 1rem;
+  margin: auto 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 60rem) {
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .content {
+    margin: 2rem 0;
+  }
+  .content p {
+    margin: 1rem 0;
+  }
+  .content ul {
+    margin: 1rem 0;
+  }
+  .content ul li .list-content .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .skills .col {
+    margin: 1rem 0;
+  }
+  .more-info {
+    margin-left: 0;
+    margin: 0 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

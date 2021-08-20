@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, white, gray);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 5rem;
+  background-color: white;
+  margin: 3rem;
+  padding: 5rem;
+  padding-left: 3rem;
+}
+
+.content {
+  h2 {
+    @include heading-title;
+  }
+  p {
+    margin: 2rem 0;
+    margin-bottom: 5rem;
+  }
+  .title {
+    @include heading;
+  }
+  .title-image {
+    @include icon;
+  }
+}
+
+.content {
+  ul {
+    margin: 3rem 0;
+    list-style: none;
+  }
+  li {
+    .list-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .bottom {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    .skill {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.8rem 0;
+
+      p {
+        display: inline-block;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .dots {
+        display: flex;
+
+        .dot {
+          @include dot();
+        }
+
+        .dot_u {
+          @include dot($color: #aaaaaa);
+        }
+      }
+    }
+  }
+}
+.intro-photo {
+  margin: 0 auto;
+
+  img {
+    display: block;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+  }
+}
+
+.intro-name {
+  font-size: 2.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  h1 {
+    font-weight: 10;
+    letter-spacing: 10px;
+  }
+  strong {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}
+
+.intro-designation {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.more-info {
+  background-color: #ffb0b2;
+  margin-left: -3rem;
+  position: relative;
+
+  .more-info__content {
+    margin: 0 3rem;
+
+    .heading {
+      display: inline-flex;
+      background-color: #383838;
+      color: white;
+      padding: 0.3rem 4rem;
+
+      .heading-large {
+        font-size: 1.3rem;
+      }
+    }
+    .heading-top {
+      position: absolute;
+      top: -1rem;
+    }
+    .contact {
+      padding: 1rem 0;
+
+      .contact-content {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+
+        i {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+        }
+      }
+
+      .contact-content__lang {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem auto;
+
+        .dots {
+          display: flex;
+          width: 70%;
+
+          .dot {
+            @include dot;
+          }
+
+          .dot_u {
+            @include dot($color: #fff);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 60rem) {
+  main {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .content {
+    margin: 2rem 0;
+    p {
+      margin: 1rem 0;
+    }
+  }
+  .content ul {
+    margin: 1rem 0;
+    li {
+      .list-content {
+        .top {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .skills {
+    grid-template-columns: 1fr;
+    .col {
+      margin: 1rem 0;
+    }
+  }
+
+  .more-info {
+    margin-left: 0;
+    margin: 0 1rem;
+  }
+}
